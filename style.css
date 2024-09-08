@@ -374,7 +374,7 @@ h3 {
     }
 
     #home .kolom {
-        margin-left: 0;
+        margin-left: -25px;
         padding: 0 20px;
         text-align: center;
     }
@@ -383,7 +383,7 @@ h3 {
         margin-top: 0;
         margin-bottom: -70px;
         margin-left: 35px;
-        width: 80%;
+        width: 75%;
         height: auto;
         
     }
@@ -402,6 +402,10 @@ h3 {
     .tengah .tutor-list {
         grid-template-columns: 1fr;
         padding: 0 20px;
+    }
+    .tengah .kolom{
+        margin-bottom: 40px;
+
     }
 
     .footer-section {
@@ -464,3 +468,4 @@ h3 {
 }
 
 
+}
