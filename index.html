@@ -7,10 +7,12 @@
     <title>Portofolio.</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-    <nav>
+    <nav data-aos="fade-down">
         <a href="#" class="tombol-menu">
             <span class="garis"></span>
             <span class="garis"></span>
@@ -32,12 +34,12 @@
     <div class="wrapper">
         <!-- untuk home -->
         <section id="home">
-            <img src="img/20240628_214334-removebg-preview.png" />
+            <img  data-aos="flip-right" data-aos-duration="2000" src="img/20240628_214334-removebg-preview.png" />
             <div class="kolom">
-                <p class="deskripsi">Hallo Semua 👋, saya </p>
-                <h2>Muhammad Rafly Asyraf</h2>
-                <p class="wdev">Web Developer</p>
-                <p><a href="" class="tbl-pink">Pelajari Lebih Lanjut</a></p>
+                <p class="deskripsi" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Hallo Semua 👋, saya </p>
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Muhammad Rafly Asyraf</h2>
+                <p class="wdev" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Web Developer</p>
+                <p><a href="" class="tbl-pink" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Pelajari Lebih Lanjut</a></p>
             </div>
         </section>
 
@@ -45,15 +47,15 @@
         <section id="about">
             
             <div class="kolom">
-                <div class="informasi">
-                    <h3>Saya Muhammad Rafly Asyraf</h3>
-                    <p>Merupakan Mahasiswa dari Universitas Bina Sarana Informatika yang memiliki motivasi tinggi terhadap
+                <div class="informasi" >
+                    <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="">Saya Muhammad Rafly Asyraf</h3>
+                    <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Merupakan Mahasiswa dari Universitas Bina Sarana Informatika yang memiliki motivasi tinggi terhadap
                         Pengembangan web, khususnya di bidang front-end. Berpengalaman dalam HTML, CSS, JavaScript. Memiliki
                         kemampuan kerja sama tim, attitude yang baik dan selalu memiliki semangat yang tinggi untuk belajar
                         teknologi baru serta mengembangkan keterampilan melalui pengalaman magang. </p>
     
-                    <p class="deskripsi">Skills</p>
-                    <p class="skl">
+                    <p class="deskripsi" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">Skills</p>
+                    <p class="skl" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                         • <b>
                             JavaSscript :
                         </b> Pengusaan dasar dan lanjutan javascript.
@@ -75,10 +77,10 @@
                         
                     </p>
                     
-                    <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
+                    <p><a href="" class="tbl-biru" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Pelajari Lebih Lanjut</a></p>
                      
                 </div>
-                <div class="img-info">
+                <div class="img-info" data-aos="flip-right" data-aos-duration="3000">
 
                     <img src="img/webdeveloper_1.jpg" />
                 </div>
@@ -92,7 +94,7 @@
                     <h2>My Project</h2>
                 </div>
                 <div class="tutor-list">
-                    <div class="box">
+                    <div class="box" data-aos="flip-left" data-aos-duration="800">
                         <div class="image">
                             <img src="img/Screenshot (274).png" alt="">
                         </div>
@@ -105,7 +107,7 @@
 
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box" data-aos="flip-left" data-aos-duration="800" data-aos-delay="200">
                         <div class="image">
                             <img src="img/Screenshot (278).png" alt="">
                         </div>
@@ -116,7 +118,7 @@
 
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box" data-aos="flip-left" data-aos-duration="800" data-aos-delay="300">
                         <div class="image">
                             <img src="img/image.png" alt="">
                         </div>
@@ -160,6 +162,14 @@
         </div>
     </div>
 
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // whether animation should happen only once - while scrolling down
+
+      });
+    </script>
 </body>
 
 </html>
